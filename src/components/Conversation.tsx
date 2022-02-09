@@ -71,7 +71,9 @@ function Conversation({ currentUser }: Props) {
           className='panel conversation__message-box'
           onSubmit={e => {
             e.preventDefault()
+            // @ts-ignore
             createMessage(e.target.text.value)
+            // @ts-ignore
             e.target.reset()
           }}
         >

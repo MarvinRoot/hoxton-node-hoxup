@@ -10,7 +10,7 @@ export type ConversationType = {
     userId: number
     participantId: number
     id: number
-    messages?: MessageType | undefined
+    messages?: MessageType[] | undefined
 }
 
 export type MessageType = {
